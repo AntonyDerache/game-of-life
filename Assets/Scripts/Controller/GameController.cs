@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,6 +19,8 @@ public class GameController : MonoBehaviour
             Random.Range(.3f, 1f),
             Random.Range(.3f, 1f)
         );
+        this._gameData.drawMode = false;
+        this._gameData.dragMode = false;
         this._width = this._gameData.width;
         this._height = this._gameData.height;
         this._gridArray = new CellController[this._height, this._width];

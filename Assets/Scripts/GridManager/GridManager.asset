@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 50
   height: 50
-  color: {r: 0.87507176, g: 0.89887714, b: 0.3017618, a: 1}
-  drawMode: 1
-  DragMode: 0
+  color: {r: 0.39851695, g: 0.5747528, b: 0.46604484, a: 1}
+  drawMode: 0
+  dragMode: 0
   dragCursorTexture: {fileID: 2800000, guid: 0022c40e604df8242a66210c6c0cceab, type: 3}
   drawCursorTexture: {fileID: 2800000, guid: 8533e0dd0fe01114fa1c0f92cac7fdc1, type: 3}
   hoveredCellOnDragging: 

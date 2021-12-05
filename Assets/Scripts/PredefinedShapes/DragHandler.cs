@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -16,9 +14,8 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
     }
 
     public void OnDrag(PointerEventData eventData) {
-        if (!this._gameData.DragMode) {
-            Debug.Log("Dragging.");
-            this._gameData.DragMode = true;
+        if (!this._gameData.dragMode) {
+            this._gameData.dragMode = true;
             Cursor.SetCursor(this._gameData.dragCursorTexture, Vector3.zero, CursorMode.ForceSoftware);
             if (this.UIHandler) {
                 this._background.SetActive(false);
@@ -31,8 +28,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("End dragging.");
-        this._gameData.DragMode = false;
+        this._gameData.dragMode = false;
         Cursor.SetCursor(null, Vector3.zero, CursorMode.ForceSoftware);
         if (this.UIHandler) {
             this._background.SetActive(true);

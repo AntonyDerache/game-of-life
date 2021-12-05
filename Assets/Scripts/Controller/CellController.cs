@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CellController : MonoBehaviour
@@ -55,19 +53,19 @@ public class CellController : MonoBehaviour
     }
 
     private void OnMouseExit() {
-        if (this._gameData.drawMode || this._gameData.DragMode) {
+        if (this._gameData.drawMode || this._gameData.dragMode) {
             this.PreviewColor(this._isAlive);
         }
-        if (this._gameData.DragMode) {
+        if (this._gameData.dragMode) {
             this._gameData.hoveredCellOnDragging = null;
         }
     }
 
     private void OnMouseEnter() {
-        if (this._gameData.drawMode || this._gameData.DragMode) {
+        if (this._gameData.drawMode || this._gameData.dragMode) {
             this.PreviewColor(!this._isAlive);
         }
-        if (this._gameData.DragMode) {
+        if (this._gameData.dragMode) {
             this._gameData.hoveredCellOnDragging = this._coordinates;
         }
     }
