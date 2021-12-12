@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2455e6852503d774ebc9e9beef252469, type: 3}
   m_Name: GridManager
   m_EditorClassIdentifier: 
-  width: 50
-  height: 50
-  color: {r: 0.39851695, g: 0.5747528, b: 0.46604484, a: 1}
+  width: 100
+  height: 100
+  color: {r: 1, g: 1, b: 1, a: 1}
   drawMode: 0
   dragMode: 0
   dragCursorTexture: {fileID: 2800000, guid: 0022c40e604df8242a66210c6c0cceab, type: 3}
